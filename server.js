@@ -11,6 +11,9 @@ import userRoutes from './routes/userRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 
+const cors=require(‘cors’);
+app.use(cors);
+
 dotenv.config()
 
 connectDB()
